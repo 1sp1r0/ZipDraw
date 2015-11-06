@@ -1,5 +1,47 @@
 <template name="draw">
 
-    Inside Draw Page
+    <!-- Toolbar -->
+    <div class="toolbar-mwrap">
+        <div class="up-toolbar clearfix">
+            <ul class="tool-list firtToolWidth reviewToolPosition clearfix">
+                <li id="draw-pencil"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pencil"><i class="fa tool fa-pencil"></i></a></li>
+                <li id="draw-arrow"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Arrow"><i class="fa tool fa-long-arrow-right"></i></a></li>
+                <li id="draw-rect"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Rectangle"><i class="fa fa-square-o"></i></a></li>
+                <li id="rub"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Eraser"><i class="fa tool fa-eraser"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
+    <!--Viewport-->
+    <div class="withsl-inside-content" style="overflow:hidden;">
+        <div id="iframe_box" style="opacity:1;transform-origin:0px 0px 0px;top:27px;">
+            {{>canvas}}
+        </div>
+    </div>
+
+    <!-- Comment Panel -->
+    <div class="comment-wrap">
+        <div id="boardClose" class="rightPanelClose"><i class="fa fa-times"></i></div>
+        <div id="boardExpand" class="wrap-collapse"><span class="commentTextBtn">Boards <i class="iconCommentAwesome iconBoardAwesome fa fa-chevron-right"></i></span></div>
+        <div id="commentRightBtn" class="wrap-collapse wrap-comment"><span class="commentTextBtn">Comments <i class="iconCommentAwesome iconCommAwesome fa fa-chevron-right"></i></span></div>
+
+        <div class="comment-app-wrap">
+            <span id="boardSection" class="boardHeadSection"><i class="accordianBoard fa fa-caret-right"></i>Boards</span>
+            <div class="comment-app-content boardList desktop-comm-box clearfix">
+                <div class="comments-list hightBoard approvals-list clearfix">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="canvas">
+    <div id='canvas' class="drawingSurfc_canvas" style="background:palegreen;">
+        <svg width="100%" height="100%">
+            {{#each makePath}}
+                <path d="{{this.annotationD}}" class="annote {{this.annotationType}}" id="{{this.annotationId}}" style="stroke-width: 2px;fill: none;" stroke="{{this.annotationColor}}"></path>
+            {{/each}}
+        </svg>
+    </div>
 </template>

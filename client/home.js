@@ -8,7 +8,7 @@ Template.home.onRendered(function(){
 
     //var sessionId = new Meteor.Collection.ObjectID()._str;
 
-    var collabIp = "100.100.100.100";
+    var collabId = "100.100.100.100";
     var collabName = "Test";
     var collabColor = "Orange";
 
@@ -19,7 +19,7 @@ Template.home.onRendered(function(){
         createdAt: createdAt,
         updatedAt: updatedAt,
         collabList:[{
-            collabIp:       collabIp,
+            collabId:       collabId,
             collabName:     collabName,
             collabColor:    collabColor
         }]
