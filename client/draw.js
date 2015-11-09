@@ -280,10 +280,8 @@ function Canvas() {
 
         // mousemove
         svg.on("mousemove", function() {
-            console.log("drawCurve - mousemove");
             //Work only if tool is pencil
             if (Session.get("tool") == "pencil") {
-                console.log("drawCurve - mousemove - pencil");
                 if (drawObj.isDown) {
                     //fetch all the coordinates while mouse moves and push in dataPoints array
                     var dataDot = d3.mouse(this);
