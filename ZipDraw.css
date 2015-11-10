@@ -1,1 +1,105 @@
 /* CSS declarations go here */
+.copyIcon {
+    float: right !important;
+    margin: 9px;
+    color: #fff;
+}
+.border-collaborator >li {
+    padding-right: 4px;
+}
+.border-collaborator >li >a.icons {
+    padding: 1px 9px !important;
+}
+.circle-border-collaborator {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204) !important;
+    width: 40px;
+    height: 40px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 4, 157, 1);
+}
+.circle-border-pencil {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204);
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 9, 157, 1);
+}
+.circle-border-arrow {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204);
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -45, 65, 157, 1);
+}
+.circle-border-rect {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204);
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -90, 120, 157, 1);
+}
+.circle-border-rub {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204) !important;
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -137, 175, 157, 1);
+}
+.circle-border-me {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204);
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 590, 157, 1);
+}
+.circle-border-chat {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204) !important;
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 534, 157, 1);
+}
+.circle-border-chat-right {
+    border-radius: 50%;
+    border: 1px solid rgb(204, 204, 204) !important;
+    width: 46px;
+    height: 46px;
+    opacity: 0.999999;
+    transform-origin: 50% 50% 0px;
+}
+.circle-border:hover {
+    background: #d3d3d3;
+    color: #fff !important;
+}
+.boxEffect {
+    width:0px;
+    height: 55px;
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    opacity: 0;
+}
+.boxEffectOpen {
+    width:300px;
+    height: 55px;
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    opacity: 1;
+}

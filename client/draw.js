@@ -65,6 +65,56 @@ Template.draw.onRendered(function() {
 
 Template.draw.events({
 
+    'click #userProfile' : function(event) {
+        {
+
+            if(userBar == false){
+                $("#userProfileBar").show();
+                /*$("#userProfileBar").addClass("boxEffectOpen");
+                $("#userProfileBar").removeClass("boxEffect");*/
+                userBar = true;
+            } else{
+                $("#userProfileBar").hide();
+                /*$("#userProfileBar").removeClass("boxEffectOpen");
+                $("#userProfileBar").addClass("boxEffect");*/
+                userBar = false;
+            }
+        };
+    },
+    'click #shareOwnLink' : function(event) {
+        {
+
+            if(userBar == false){
+                $("#shareLink").show();
+
+                userBar = true;
+            } else{
+                $("#shareLink").hide();
+                userBar = false;
+            }
+        };
+    },
+
+'click #boardExpand' : function(event) {
+
+    {
+        console.log("false");
+        if(chat == false){
+            $(".comment-wrap").animate({"right":"-250px"});
+            $(".content-wrap").css({"margin-right":"0"});
+            chat = true;
+        } else{
+            console.log("true");
+            $(".comment-wrap").animate({"right":"0"});
+            $(".content-wrap").css({"margin-right":"250px"});
+            chat = false;
+        }
+    };
+},
+
+
+
+
     // Event Handler for ZoomIn
     'click #zoom-in': function(event) {
         rendered();
@@ -417,3 +467,5 @@ var canvas;
 var canvasReady = false;
 var userColor;
 var temp = 0;
+var chat = false;
+var userBar = false;

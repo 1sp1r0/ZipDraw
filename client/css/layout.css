@@ -1274,7 +1274,7 @@ header {
 .comment-wrap {
 	background: #fff;
 	height: 100%;
-	padding: 46px 0 0;
+	padding: 0 0 0;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -1282,7 +1282,7 @@ header {
 	z-index: 99;
 }
 .comment-app-wrap {
-	margin: 0;
+	margin-top:10px;
 	padding: 0;
 }
 .top_60px
@@ -1657,13 +1657,32 @@ header {
 	border-radius: 2px 0 0 2px;
 	color: #fff;
 	cursor: pointer;
-	height: 100px;
+	height: 80px;
 	left: -30px;
 	padding: 20px 0 0 25px;
 	position: absolute;
 	width: 30px;
-    top: 13%;
-    font-family: "MuseoSans-500";
+    top: 0%;
+}
+.user-profile {
+    width: 300px;
+    height: 55px;
+    border: 1px solid #333;
+    background: #323232;
+    border-radius: 6px;
+    position: absolute;
+    top: -5px;
+    left: 55px;
+}
+.share-link {
+    width: 360px;
+    height: 54px;
+    border: 1px solid #ccc;
+    background: #999;
+    border-radius: 6px;
+    position: absolute;
+    top: -5px;
+    left: 55px;
 }
 .wrap-comment {
     background: #49525c;
@@ -1683,6 +1702,9 @@ header {
     transform-origin: left top 0;
     float: left;
     position: relative;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
 }
 .wrap-collapse.active .fa {
 	transform: rotate(180deg);
@@ -2071,7 +2093,7 @@ header {
 .popup-head {
 	border-bottom: 1px solid #f0f0f0;
 	color: #323a45;
-	font-family: "MuseoSans-500";
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	margin: 0;
 	padding: 15px 0 15px 15px;
@@ -2127,14 +2149,14 @@ header {
     font-size: 16px;
     cursor: pointer;
     height: 30px;
-    left: -25px;
+    left: -30px;
     padding: 4px 0 0 24px;
     position: absolute;
-    width: 25px;
-    top: 9.5%;
+    width: 30px;
+    top: 3.5%;
 }
 .fa-times {
-    margin-left: -17px;
+    margin-left: -14px;
 }
 .additional_width {
     width: 140px;
@@ -2534,7 +2556,7 @@ a.collaborator_right {
 	background: #e3e3e3;
 }
 .edit-profile {
-	width: 570px;
+	width: 500px;
 }
 .blkbtn {
 	background: #697782;
@@ -2621,7 +2643,6 @@ a.collaborator_right {
 	margin: 1px 0px -1px 7px;
 }
 .tool-list {
-	border: 1px solid #394149;
 	border-radius: 3px;
 	float: left;
 	margin: 0;
@@ -2638,38 +2659,31 @@ span.res-val.tool {
     font-size: 14px !important;
 }
 .tool-list li a.icons {
-	border-right: 1px solid #394149;
-	color: #ffffff;
+	color: #999;
 	display: block;
-	font-size: 17px;
+	font-size: 25px;
 	font-weight: normal !important;
-	padding: 0.6px 8px;
+	padding: 3.6px 11px;
     transition: all .2s ease-in-out;
 	}
-.tool-list li a.icons:hover {
-    color: #ffffff;
+/*.tool-list li a.icons:hover {
+    color: #000;
     display: block;
-    font-size: 17px;
+    font-size: 30px;
     font-weight: normal !important;
-    padding: 0.6px 8px;
+    padding: 0.6px 9px;
     transform: scale(1.1);
-}
+}*/
 .tool-list li a.icons .fa-pencil, .tool-list li a.icons .fa-search-minus, .tool-list li a.icons .fa-search-plus {
 	display: block;
 	margin: 3px 0 6px;
-}
-.tool-list li a.icons .boxbtn {
-	border: 1px solid #636566;
-	display: block;
-	margin: 7px 0 7px;
-	padding: 7px;
 }
 
 .tool-list li:last-child a {
 	border: 0px;
 }
 .fa.fa-mouse-pointer, .fa.fa-square-o, .fa.fa-eraser {
-    margin-top: 3px !important;
+    margin: 6px 1px;
 }
 .fa.fa-mouse-pointer, .fa.fa-eraser {
     margin-left: 3px;
@@ -2682,9 +2696,7 @@ span.res-val.tool {
 }
 .tool-list li a.icons .fa.fa-long-arrow-right {
 	display: block;
-	margin: 3px 0 6px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+	margin: 5px -1px 0px;
 }
 .toolright {
 	float: right;
@@ -2770,8 +2782,12 @@ span.res-val.tool {
 	position: fixed;
 	width: 100%;
 	z-index: 99;
-	background: #49525c;
-	border-bottom: 1px solid #394149;
+	}
+.collabUser-mwrap {
+    padding: 3px;
+    position: relative;
+    width: 100%;
+    z-index: 99;
 }
 .withsl-inside-content {
 	padding: 20px 0 43px;
@@ -3234,11 +3250,6 @@ i.accordianComment.fa {
     height: 85px;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-.reviewToolPosition {
-    margin-top: 4px !important;
-    margin-bottom: 7px !important;
 }
 path{
     cursor:pointer;
@@ -4067,9 +4078,7 @@ path{
         float: none;
     }
     .toolbar-mwrap {
-        margin: -10px 0 0;
-        padding: 0;
-        position: relative;
+       position: relative;
     }
     .sl-mainwrap {
         padding-right: 0;

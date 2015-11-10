@@ -4,10 +4,36 @@
     <div class="toolbar-mwrap">
         <div class="up-toolbar clearfix">
             <ul class="tool-list firtToolWidth reviewToolPosition clearfix">
-                <li id="draw-pencil"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pencil"><i class="fa tool fa-pencil"></i></a></li>
-                <li id="draw-arrow"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Arrow"><i class="fa tool fa-long-arrow-right"></i></a></li>
-                <li id="draw-rect"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Rectangle"><i class="fa fa-square-o"></i></a></li>
-                <li id="rub"><a href="#" class="icons" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Eraser"><i class="fa tool fa-eraser"></i></a></li>
+                <li id="draw-pencil"><a href="#" class="icons circle-border-pencil circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Pencil"><i class="fa tool fa-pencil" style="margin: 4px 1px 0px;"></i></a></li>
+                <li id="draw-arrow"><a href="#" class="icons circle-border-arrow circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Arrow" style="padding: 4px 14px;"><i class="fa tool" style="font-size: 30px;">/</i></a></li>
+                <li id="draw-rect"><a href="#" class="icons circle-border-rect circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Rectangle"><i class="fa fa-square-o"></i></a></li>
+                <li id="rub"><a href="#" class="icons circle-border-rub circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Eraser"><i class="fa tool fa-eraser" style="margin: 0px -1px; font-size: 22px;"></i></a></li>
+            </ul>
+            <ul class="tool-list firtToolWidth reviewToolPosition clearfix">
+                <li id="userProfile" style="position: absolute; left: 12px;">
+                    <a href="#" class="icons circle-border-me circle-border" style="padding: 3.6px 12px;" data-toggle="modal" ><i class="fa tool fa-user" style="margin: 5px 0px;"></i>
+                        <ul id="userProfileBar" class="user-profile" style="display: none;">
+                            <!--<li>
+                                <a>color</a>
+                            </li>
+                            <li>
+                                <a>User Name</a>
+                            </li>-->
+                        </ul>
+                    </a>
+                    <div class="clearfix">
+                    </div>
+                 </li>
+                <li id="shareOwnLink" style="position: absolute; left: 12px;">
+                    <a href="#" class="icons circle-border-chat circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" style="padding: 4px 11px;"><i class="fa fa-share-alt-square"></i>
+                        <ul id="shareLink" class="share-link" style="display: none;">
+                            <textarea style="border: 1px solid #dbdbdb;border-radius: 5px;font-size: 12px;height: 40px;width: 309px;margin: 6px 0px 6px 6px;"></textarea>
+                            <li class="copyIcon">
+                                <a><i class="fa fa-files-o"></i></a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -20,24 +46,41 @@
     </div>
 
     <!-- Comment Panel -->
+
     <div class="comment-wrap">
-        <div id="boardClose" class="rightPanelClose"><i class="fa fa-times"></i></div>
-        <div id="boardExpand" class="wrap-collapse"><span class="commentTextBtn">Boards <i class="iconCommentAwesome iconBoardAwesome fa fa-chevron-right"></i></span></div>
-        <div id="commentRightBtn" class="wrap-collapse wrap-comment"><span class="commentTextBtn">Comments <i class="iconCommentAwesome iconCommAwesome fa fa-chevron-right"></i></span></div>
-
-        <div class="comment-app-wrap">
-            <span id="boardSection" class="boardHeadSection"><i class="accordianBoard fa fa-caret-right"></i>Boards</span>
-            <div class="comment-app-content boardList desktop-comm-box clearfix">
-                <div class="comments-list hightBoard approvals-list clearfix">
-
-                </div>
+        <div id="boardExpand" class="wrap-collapse"><span class="commentTextBtn">Chat</span></div>
+        <div class="collabUser-mwrap">
+            <div class="up-toolbar clearfix">
+                <ul class="tool-list firtToolWidth reviewToolPosition border-collaborator clearfix">
+                    <li><a href="#" class="icons circle-border-collaborator"><i class="fa fa-user" style="margin: 4px 1px 0px; color:darkgreen;"></i></a></li>
+                    <li><a href="#" class="icons circle-border-collaborator"><i class="fa fa-user" style="margin: 4px 1px 0px;color:red;"></i></a></li>
+                    <li><a href="#" class="icons circle-border-collaborator"><i class="fa fa-user" style="margin: 4px 1px 0px;color:deeppink;"></i></a></li>
+                    <li><a href="#" class="icons circle-border-collaborator"><i class="fa fa-user" style="margin: 4px 1px 0px;color:yellowgreen;"></i></a></li>
+                    <li><a href="#" class="icons circle-border-collaborator"><i class="fa fa-user" style="margin: 4px 1px 0px;color:purple;"></i></a></li>
+                </ul>
             </div>
+        </div>
+        <div class="comment-app-wrap">
+            <span id="boardSection" class="boardHeadSection">Chat</span>
+            <div class="clearfix"></div>
+            <div style="padding: 10px;">
+                <textarea style="border: 1px solid #dbdbdb;border-radius: 0;font-size: 12px;height: 450px;resize: none; width: 100%; "></textarea>
+            </div>
+            <div class="clearfix"></div>
+                <div style="padding: 10px;">
+                    <figure>
+                        <span class="thumbnail nameImage circle-border-chat-right" style="text-transform:uppercase; font-size:16px; text-align:center; float: left;">AB
+                        </span>
+                        <textarea style="border: 1px solid #dbdbdb;border-radius: 0;font-size: 12px;height: 45px;resize: none; width: 170px; float: right;"></textarea>
+                    </figure>
+                </div>
+            <div class="clearfix"></div>
         </div>
     </div>
 </template>
 
 <template name="canvas">
-    <div id='canvas' class="drawingSurfc_canvas" style="background:palegreen;">
+    <div id='canvas' class="drawingSurfc_canvas" style="background:#fff;">
         <svg width="100%" height="100%">
             {{#each makePath}}
                 <path d="{{this.annotationD}}" class="annote {{this.annotationType}}" id="{{this.annotationId}}" style="stroke-width: 2px;fill: none;" stroke="{{this.annotationColor}}"></path>
