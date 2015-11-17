@@ -9,33 +9,44 @@
                 <li id="draw-rect"><a href="#" class="icons circle-border-rect circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Rectangle"><i class="fa fa-square-o"></i></a></li>
                 <li id="rub"><a href="#" class="icons circle-border-rub circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Eraser"><i class="fa tool fa-eraser" style="margin: 0px -1px; font-size: 22px;"></i></a></li>
             </ul>
-            <ul class="tool-list firtToolWidth reviewToolPosition clearfix">
-                <li id="userProfile" style="position: absolute; left: 12px;">
-                    <a href="#" class="icons circle-border-me circle-border" style="padding: 3.6px 12px;" data-toggle="modal" ><i class="fa tool fa-user" style="margin: 5px 0px;"></i>
-                        <ul id="userProfileBar" class="user-profile" style="display: none;">
-                            <!--<li>
-                                <a>color</a>
-                            </li>
-                            <li>
-                                <a>User Name</a>
-                            </li>-->
-                        </ul>
-                    </a>
-                    <div class="clearfix">
-                    </div>
-                 </li>
-                <li id="shareOwnLink" style="position: absolute; left: 12px;">
-                    <a href="#" class="icons circle-border-chat circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" style="padding: 4px 11px;"><i class="fa fa-share-alt-square"></i>
-                        <ul id="shareLink" class="share-link" style="display: none;">
-                            <textarea style="border: 1px solid #dbdbdb;border-radius: 5px;font-size: 12px;height: 40px;width: 309px;margin: 6px 0px 6px 6px;"></textarea>
-                            <li class="copyIcon">
-                                <a><i class="fa fa-files-o"></i></a>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-            </ul>
         </div>
+    </div>
+
+    <div class="bottomUserOption">
+        <ul class="tool-list reviewToolPosition clearfix">
+            <li style="padding: 0 0 3px 10px;">
+                <a href="#" id="userProfile" class="icons circle-border-me circle-border" style="padding: 3.6px 12px;" data-toggle="modal" ><i class="fa tool fa-user" style="margin: 5px 0px;"></i>
+                </a>
+                <ul id="userProfileBar" class="user-profile" style="display: none;">
+                    <h5>Change your Name</h5>
+                    <li class="nameColor">
+                        <input type="text" placeholder="your name" style="border: 1px solid #dbdbdb;border-radius: 5px;font-size: 12px;height: 30px;width: 235px;margin: 0 0 0 6px;">
+                    </li>
+                    <h5>Choose your color</h5>
+                    <li>
+                        <form>
+                            <fieldset style="padding-right: 6px; padding-left: 6px;">
+                                <input type="color" id="colorChoice" style="width: 100%; border-radius: 5px;">
+                            </fieldset>
+                        </form>
+                    </li>
+                    <button type="button" class="btn up-btn blkbtn" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn green up-btn">Save</button>
+                </ul>
+                <div class="clearfix">
+                </div>
+            </li>
+            <li style="padding: 5px 0 5px 10px;">
+                <a href="#" id="shareOwnLink" class="icons circle-border-chat circle-border" data-toggle="popover" data-trigger="hover" data-placement="bottom" style="padding: 4px 11px;"><i class="fa fa-share-alt-square"></i>
+                </a>
+                <ul id="shareLink" class="share-link" style="display: none;">
+                    <input type="text" style="border: 1px solid #dbdbdb;border-radius: 5px;font-size: 12px;height: 35px;width: 199px;margin: 8px 0 8px 6px;">
+                    <li class="copyIcon">
+                        <a><i class="fa fa-files-o"></i></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <!--Viewport-->

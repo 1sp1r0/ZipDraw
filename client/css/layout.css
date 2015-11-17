@@ -1118,9 +1118,9 @@ header {
 .up-btn {
 	border-radius: 3px !important;
 	float: right;
-	font-family: "MuseoSans-500" !important;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 	font-size: 13px !important;
-	margin: 7px 10px 0 0;
+	margin: 6px 6px 0 0;
 	padding: 3px 10px !important;
 }
 .mrg-left{margin-left: 20px;}
@@ -1307,8 +1307,8 @@ header {
     border-left: 2px solid #f9f9fb;
 }
 .comment-app-wrap > span {
-    background: #f9f9fb;
-    color: #000;
+    background: #9d9d9d;
+    color: #fff;
     display: block;
     font-size: 16px;
     padding: 10px;
@@ -1665,24 +1665,24 @@ header {
     top: 0%;
 }
 .user-profile {
-    width: 300px;
-    height: 55px;
-    border: 1px solid #333;
-    background: #323232;
+    width: 250px;
+    height: 147px;
+    border: 1px solid #9d9d9d;
+    background: #9d9d9d;
     border-radius: 6px;
     position: absolute;
-    top: -5px;
-    left: 55px;
+    top: -100px;
+    left: 70px;
 }
 .share-link {
-    width: 360px;
+    width: 250px;
     height: 54px;
-    border: 1px solid #ccc;
-    background: #999;
+    border: 1px solid #9d9d9d;
+    background: #9d9d9d;
     border-radius: 6px;
     position: absolute;
-    top: -5px;
-    left: 55px;
+    top: 50px;
+    left: 70px;
 }
 .wrap-comment {
     background: #49525c;

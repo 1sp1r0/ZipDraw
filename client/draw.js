@@ -64,6 +64,9 @@ Template.draw.onRendered(function() {
 });
 
 Template.draw.events({
+    'change #colorChoice' : function(event) {
+            $(".nameColor").css('color', $(this).val());
+    },
 
     'click #userProfile' : function(event) {
         {

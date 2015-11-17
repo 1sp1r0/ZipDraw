@@ -1,8 +1,16 @@
 /* CSS declarations go here */
-.copyIcon {
+.copyIcon{
     float: right !important;
     margin: 9px;
+    font-size: 25px;
     color: #fff;
+    transition: all .2s ease-in-out;
+}
+.copyIcon:hover{
+    transform: scale(1.1);
+}
+.copyIcon a:hover, .copyIcon a:focus {
+    color:#a3c74e !important;
 }
 .border-collaborator >li {
     padding-right: 4px;
@@ -62,7 +70,7 @@
     height: 46px;
     opacity: 0.999999;
     transform-origin: 50% 50% 0px;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 590, 157, 1);
+    /*transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 590, 157, 1);*/
 }
 .circle-border-chat {
     border-radius: 50%;
@@ -71,7 +79,7 @@
     height: 46px;
     opacity: 0.999999;
     transform-origin: 50% 50% 0px;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 534, 157, 1);
+   /* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 534, 157, 1);*/
 }
 .circle-border-chat-right {
     border-radius: 50%;
@@ -102,4 +110,17 @@
     -o-transition: width 2s ease;
     transition: width 2s ease;
     opacity: 1;
+}
+.bottomUserOption {
+    position: absolute;
+    bottom: 30px;
+    z-index: 99;
+}
+.user-profile >h5 {
+    margin: 0 0 0 0px;
+    padding: 6px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: .4px;
+    color: #fff;
 }
