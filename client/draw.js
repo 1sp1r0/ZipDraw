@@ -17,7 +17,6 @@ Template.canvas.helpers({
             }
         }
 
-        console.log(paths);
         return paths;
     }
 });
@@ -82,7 +81,6 @@ Template.draw.events({
     },
     // Event Handler for Using pencil tool
     'click #draw-pencil': function(event) {
-        console.log("inside #draw-pencil");
 
         $(".activeIcon").removeClass("activeIcon");
         $(event.target).addClass("activeIcon");
@@ -246,8 +244,6 @@ function Canvas() {
     //To draw a curve
     self.drawCurve = function() {
 
-        console.log("drawCurve");
-
         // mousedown
         svg.on("mousedown", function() {
             drawObj.isDown = true;
@@ -322,7 +318,6 @@ function Canvas() {
                         .attr("stroke", userColor)
                         .attr("stroke-width", 2)
                         .attr("fill", "none")
-                        .attr('marker-end', 'url(#marker_' + Meteor.userId() + ')')
                         .attr('id', 'annotePre')
                         .attr("class", "arrow annote");
                     drawObj.dataPoints.pop();
@@ -400,13 +395,11 @@ function rendered() {
 
     if(Session.get("tool")!="hide"){
         $('svg').show();
-        console.log("rendered() - svg shown");
     }
     if (!canvasReady) {
         canvas = new Canvas();
         //$("#iframe_box").css('transform', 'matrix(1,0,0,1,0,0)');
         canvasReady = true;
-        console.log("rendered() - canvasCreated");
     };
 }
 
