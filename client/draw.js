@@ -85,15 +85,24 @@ Template.draw.events({
     },
     'click #shareOwnLink' : function(event) {
         {
+            Meteor.call('testSlackAPI', function (err) {
+                if (err) {
+                    console.log("Error:" + err.reason);
+                    return;
+                }
+            });
 
-            if(userBar == false){
-                $("#shareLink").show();
 
-                userBar = true;
-            } else{
-                $("#shareLink").hide();
-                userBar = false;
-            }
+            //if(userBar == false){
+            //    $("#shareLink").show();
+            //
+            //    userBar = true;
+            //} else{
+            //    $("#shareLink").hide();
+            //    userBar = false;
+            //}
+
+
         };
     },
 
